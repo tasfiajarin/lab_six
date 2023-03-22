@@ -1,5 +1,5 @@
 def encode(lock_code):
-    encoded = ''
+    encoded = ''  # empty string to add units later on
     for x in lock_code:
         num = int(x) + 3
         encoded += str(num)
@@ -25,7 +25,7 @@ def main():
             lock_code = input('Please enter your password to encode: ')
             encoded = encode(lock_code)
         elif menu_option == 2:
-            decoded = decode(encoded)
+            decoded = decode(encoded)  #calls parter's function and saves it
             print('The encoded password is ' + encoded + 'and the original password is' + decoded + '.')
         elif menu_option == 3:
             break
