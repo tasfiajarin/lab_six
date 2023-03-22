@@ -6,7 +6,14 @@ def encode(lock_code):
     return encoded
 
 
-#def decode(lock_code):  #partner writes
+def decode(encoded):
+    decoded = ""
+        for x in encoded:
+	x = int(x)
+	x -+ 3
+	x = str(x)
+	decoded += x
+    return decoded
 
 
 
@@ -33,5 +40,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
