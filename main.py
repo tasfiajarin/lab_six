@@ -8,11 +8,11 @@ def encode(lock_code):
 
 def decode(encoded):
     decoded = ""
-        for x in encoded:
-	x = int(x)
-	x -+ 3
-	x = str(x)
-	decoded += x
+    for x in encoded:
+	    x = int(x)
+	    x -+ 3
+	    x = str(x)
+	    decoded += x
     return decoded
 
 
@@ -31,9 +31,10 @@ def main():
         if menu_option == 1:
             lock_code = input('Please enter your password to encode: ')
             encoded = encode(lock_code)
+            print('Your password has been encoded and stored.')
         elif menu_option == 2:
             decoded = decode(encoded)  #calls parter's function and saves it
-            print('The encoded password is ' + encoded + 'and the original password is' + decoded + '.')
+            print('The encoded password is ' + encoded + 'and the original password is ' + decoded + '.')
         elif menu_option == 3:
             break
 
