@@ -1,4 +1,4 @@
-def encode(lock_code):
+def encode(lock_code):  #moshammetjarin
     encoded = ''  # empty string to add units later on
     for x in lock_code:
         num = int(x) + 3
